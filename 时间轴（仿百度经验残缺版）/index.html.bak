@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="res/lib/jquery-1.4.4.min.js"></script>
+<link rel="stylesheet" href="res/css/main.css" type="text/css"></link>
+<script type="text/javascript" src="res/lib/main.js"></script>
+</head>
+  
+  <body>
+  <div style="height:200px;">
+  
+  </div>
+  <div class="content">
+  <ul>
+  <li><a name="1"></a>
+  <div class="icon" style="visibility: visible;">1</div>
+  	  <div class="font">1111111111</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  
+  <li><a name="2"></a>
+  <div class="icon" style="visibility: visible;">2</div>
+  	  <div class="font">2222</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  
+  <li><a name="3"></a>
+  <div class="icon" style="visibility: visible;">3</div>
+  	  <div class="font">3333333333</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  
+  <li><a name="4"></a>
+  <div class="icon" style="visibility: visible;">4</div>
+  	  <div class="font">4444444444</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  
+  <li><a name="5"></a>
+  <div class="icon" style="visibility: visible;">5</div>
+  	  <div class="font">5555555555</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  
+  <li><a name="6"></a>
+  <div class="icon" style="visibility: visible;">6</div>
+  	  <div class="font">6666666666</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  
+  <li><a name="7"></a>
+  <div class="icon" style="visibility: visible;">7</div>
+  	  <div class="font">7777777777</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  
+  <li><a name="8"></a>
+  <div class="icon" style="visibility: visible;">8</div>
+  	  <div class="font">8888888888</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  
+  <li><a name="9"></a>
+  <div class="icon" style="visibility: visible;">9</div>
+  	  <div class="font">9999999999</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  
+  <li><a name="10"></a>
+  <div class="icon" style="visibility: visible;">10</div>
+  	  <div class="font">10101010101010101010</div>
+	  <div class="img"><img src="images/0.jpg"></img></div>  
+	  <div class="img"><img src="images/0.jpg"></img></div>  	
+  </li>
+  </ul>
+  </div>
+  <div class="group">
+  <div class="group-list" style=" visibility: hidden;">
+  <a class="group-icon" title="点击返回第1步" href="#1" style="display: none;">1</a>
+  <a class="group-icon" title="点击返回第2步" href="#2" style="display: none;">2</a>
+  <a class="group-icon" title="点击返回第3步" href="#3" style="display: none;">3</a>
+  <a class="group-icon" title="点击返回第4步" href="#4" style="display: none;">4</a>
+  <a class="group-icon" title="点击返回第5步" href="#5" style="display: none;">5</a>
+  <a class="group-icon" title="点击返回第6步" href="#6" style="display: none;">6</a>
+  <a class="group-icon" title="点击返回第7步" href="#7" style="display: none;">7</a>
+  <a class="group-icon" title="点击返回第8步" href="#8" style="display: none;">8</a>
+  <a class="group-icon" title="点击返回第9步" href="#9" style="display: none;">9</a>
+  <a class="group-icon" title="点击返回第10步" href="#10" style="display: none;">10</a>
+  </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript"  src="http://ajax.microsoft.com/ajax/jquery/jquery-1.11.1.min.js"></script>
+    <style>
+        html, body,
+        div,
+        ul, ol, li,
+        dl, dt, dd,
+        a, s, b, i {
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face{font-family:'marketicon';src:url('http://at.alicdn.com/t/font_1401005400_29013.eot');
+            src:url('http://at.alicdn.com/t/font_1401005400_29013.eot?#iefix') format('embedded-opentype'),
+            url('http://at.alicdn.com/t/font_1401005400_29013.woff') format('woff'),
+            url('http://at.alicdn.com/t/font_1401005400_29013.ttf') format('truetype'),
+            url('http://at.alicdn.com/t/font_1401005400_29013.svg#iconfont') format('svg')}
+
+        .clearfix{*zoom:1}
+        .clearfix:before,.clearfix:after{content:"";display:table}
+        .clearfix:after{clear:both}
+
+
+        .warp { width: 1190px; margin: 0 auto; }
+
+        .nav-item-list { overflow: hidden; border-bottom: 2px solid #fa4f83; position: relative; }
+        .nav-item-list .warp { position: relative; }
+
+        .nav-item-list #menu-left {
+            float: left;
+            height: 35px;
+            margin-right: 28px;
+            position: relative;
+            white-space: nowrap;
+            width: auto
+        }
+        .nav-item-list #menu-right { float: right; }
+
+
+        .nav-item-list li {
+            float: left;
+            height: 35px;
+            width: auto;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+        .nav-item-list .menu-item-home a:hover {
+            background: #f56293;
+            color: #fff;
+        }
+
+        .nav-item-list a {
+            display: inline-block;
+            zoom: 1;
+            height: 35px;
+            width: auto;
+            font: bold 14px/35px "\5b8b\4f53";
+            padding: 0 15px;
+            color: #404040;
+            position: relative;
+        }
+        .nav-item-list a:link {
+            text-decoration: none;
+        }
+
+        .nav-item-list .current a {
+            background: #f56293;
+            color: #fff;
+        }
+
+        .nav-item-list .icon {
+            font-family: marketicon;
+            font-weight: 100;
+        }
+
+        .nav-item-list b {
+            transition: All .15s ease;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #d32d2d;
+            top: 35px;
+            left: 0;
+            z-index: 1;
+            display: block;
+            overflow: hidden;
+            _display: none;
+        }
+        .nav-item-list b {
+            background: #f56293;
+        }
+        .nav-item-list a:hover b {
+            top: 0;
+        }
+        .nav-item-list i {
+            transition: All .15s ease;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            top: -35px;
+            color: #fff;
+            font: bold 14px/35px "\5b8b\4f53";
+            text-align: center;
+            left: 0;
+            cursor: pointer;
+            display: block;
+            font-style: normal;
+            _display: none;
+        }
+        .nav-item-list a:hover i {
+            top: 0;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        /** 仿淘宝菜单 */
+        $(function(){
+            $("#nav .menu-item-home a").append('<span class="icon">㑳</span>');
+            $("#nav li:not(.menu-item-home) a").each(function(){
+                // alert($(this).text())
+                $(this).append('<b><i>'+ $(this).text() + '</i></b>');
+            });
+            /*
+            $("#nav li").not(".current").hover(
+                    function(){
+                        $(this).addClass("current");
+                    },
+                    function(){
+                        $(this).removeClass("current");
+                    }
+            );
+            */
+        });
+    </script>
+</head>
+<body>
+
+<div id="nav" class="nav-item-list clearfix">
+    <div class="warp">
+        <ul id="menu-left" class="menu-item-list">
+            <li class="menu-item-home current">
+                <a href="http://" >
+                    首页
+                </a>
+            </li>
+            <li>
+                <a href="http://">
+                    时尚饰品
+                </a>
+            </li>
+            <li>
+                <a href="http://">珠宝首饰</a>
+            </li>
+            <li>
+                <a href="http://">手机手表</a>
+            </li>
+        </ul>
+        <ul id="menu-right"></ul>
+    </div>
+</div>
+
+</body>
+</html>

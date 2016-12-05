@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>给力游</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<div class="header">
+  <h2>首页</h2>
+  <div id="demo01" class="flexslider">
+    <ul class="slides">
+      <li>
+        <div class="img"><img src="images/bann.jpg" width="100%" alt="" /></div>
+        <div class="a"><span>最新《囧西游》等你来加入</span></div>
+      </li>
+      <li>
+        <div class="img"><img src="images/banner2.png" width="100%" alt="" /></div>
+        <div class="a">1</div>
+      </li>
+      <li>
+        <div class="img"><img src="images/banner3.png" width="100%" alt="" /></div>
+        <div class="a">1</div>
+      </li>
+      <li>
+        <div class="img"><img src="images/bann.jpg" width="100%" alt="" /></div>
+        <div class="a">1</div>
+      </li>
+    </ul>
+  </div>
+  <!--flexslider end--> 
+</div>
+<div class="bodyer">
+  <div class="bodyer_top">
+    <div class="fl bodyer_top_left"><img src="images/xw.jpg" width="100%"/></div>
+    <div class="fl bodyer_top_right">
+      <div class="fl top_whole">
+        <div class="fl top_right_l"><img src="images/cp.jpg" width="100%"/></div>
+        <div class="fl top_right_r"><img src="images/gy.jpg" width="100%"/></div>
+      </div>
+      <div class="top_right_bott"><img src="images/zn.jpg" width="100%"/></div>
+    </div>
+  </div>
+  <div class="bodyer_bottom">
+    <div class="fl bottom_whole_left"><img src="images/lx.jpg" width="100%"/></div>
+    <div class="fl bottom_whole_right"><img src="images/gd.jpg" width="100%"/></div>
+  </div>
+</div>
+<script type="text/javascript" src="js/slider.js"></script> 
+<script type="text/javascript">
+$(function(){
+
+	$('#demo01').flexslider({
+		animation: "slide",
+		direction:"horizontal",
+		easing:"swing"
+	});
+	
+	
+});
+
+</script>
+</body>
+</html>

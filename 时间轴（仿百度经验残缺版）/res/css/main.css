@@ -1,0 +1,64 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+.content ul{
+list-style-type:none;
+
+}
+.content ul li{
+margin-left: 200px;
+border-left: 2px dotted #e4e4e4;
+position: relative;
+}
+.icon{
+	width:32px;
+	height:32px;
+	position: absolute;
+	left: -18px;
+	top:0px;
+	font-size: 16px;
+    color: #efe;
+    text-align: center;
+    line-height: 32px;
+	background:url(../../images/step_ol_bg.png) no-repeat;
+}
+.font{
+	margin-left:30px;
+}
+.img{
+	margin-left:30px;
+}
+.group{
+width: 32px;
+visibility: visible;
+position: fixed;
+top: 0px;
+left: 184px;
+}
+.group-icon{
+	width: 32px;
+height: 34px;
+display: block;
+font-size: 16px;
+text-decoration: none;
+cursor: pointer;
+color: #fff;
+text-align: center;
+line-height: 32px;
+background:url(../../images/step_ico_bg.png) no-repeat 0 -68px;
+}
+.group-icon_a{
+	width: 32px;
+height: 34px;
+display: block;
+font-size: 16px;
+text-decoration: none;
+cursor: pointer;
+color: #fff;
+text-align: center;
+line-height: 32px;
+background:url(../../images/step_ico_bg.png) no-repeat 0 -68px;
+}

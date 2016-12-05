@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding:0;
+}
+body {
+	margin: 0;
+	font-size: 12px;
+}
+.whole {
+	padding: 0 10%;
+	position: relative;
+}
+.whole img {
+	text-align: center;
+}
+.inpus_text {
+	position: absolute;
+	width: 60%;
+	font-size:12px;
+	top: 58%;
+	left: 23%;
+	height: 10%;
+	color: #bbb;
+	text-indent:1em;
+	border:0;
+}
+.inpus_padd {
+	top: 77%;
+}
+.whole_bot
+{
+	margin:0 10%;
+	}
+.bus_land
+{
+	width:100%;
+	height:45px;
+	color:#fff;
+	background:#69d0ba;
+	font-size:22px;
+	border:0;
+	cursor:pointer;
+	-moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;            /* W3C syntax */
+	border-bottom:1px #6ebb91 solid;
+	-webkit-appearance: none; 
+	}
+	.bus_land:hover
+	{
+		background:#2abc9c;
+		border-bottom:1px #319e62 solid;
+		}
+	.bus_rags
+	{
+	width:50%;
+	margin:10% 25%;
+	height:40px;
+	color:#353535;
+	background:#f1f1f1;
+	font-size:18px;
+	border:1px #bfbfbf solid;
+	cursor:pointer;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+	-webkit-appearance: none; 
+
+		}
+		.bus_rags:hover
+		{
+			background:#d9d9d9;
+			border:1px #bfbfbf solid;
+			}
+@media screen and (min-width: 480px)
+{
+	.inpus_text
+	{
+		font-size:16px;
+		}
+	}
+	@media screen and (min-width: 768px)
+{
+	.inpus_text
+	{
+		font-size:20px;
+		}
+	}
+		@media screen and (min-width: 800px)
+{
+	.inpus_text
+	{
+		font-size:28px;
+		}
+	}

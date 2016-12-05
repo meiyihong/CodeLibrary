@@ -1,0 +1,47 @@
+
+$(window).scroll(function(){
+	var _scrollTop=parseInt($(window).scrollTop());
+	var _arr=new Array();
+	var _hei=0;
+	var _offsetTop=0;
+	var _maxTop=0;
+	_arr[0]=0;
+	var _imgList=$(".content li");
+	var _groupList=$(".group-list a");
+	for(var i=0;i<_imgList.length;i++)
+	{
+		
+	_hei=parseInt(_imgList.eq(i).css("height"));
+	
+	 _offsetTop=parseInt(_imgList.eq(i).offset().top)+_hei;
+
+	 _arr[i+1]=_offsetTop;
+	
+	if(_scrollTop>=_arr[i]-34*i&&_scrollTop<=_arr[i+1]-34*(i+1))
+	{	
+		$(".group-list").css("visibility","visible");
+		_groupList.eq(i).css("display","block");
+			_imgList.eq(i).find('.icon').css("visibility","hidden");
+		for(var j=0;j<i;j++){
+			_groupList.eq(j).css("display","block");
+			_groupList.eq(j).css({"background":"url(images/step_ico_bg.png) no-repeat 0 -68px"});
+		}
+		
+		_groupList.eq(i).css({"background":"url(images/step_ol_bg.png) no-repeat"});
+for(var j=i+1;j<_groupList.length;j++){
+	_imgList.eq(j).find('.icon').css("visibility","visible");
+	_groupList.eq(j).css("display","none");
+		}
+
+	// $(".nav-center ul li a").eq(i).addClass("on").parent().siblings().children("a").removeClass("on");
+	}
+	if(_scrollTop<=200){
+		$(".group-list").css("visibility","hidden");
+		_imgList.eq(0).find('.icon').css("visibility","visible");
+	}
+	_maxTop=parseInt(_imgList.eq(_imgList.length-1).css("height"))+parseInt(_imgList.eq(_imgList.length-1).offset().top);
+	if(_scrollTop>=_maxTop-34*_imgList.length+i*34){
+	_groupList.eq(i).css("display","none");
+	}
+	}
+});
